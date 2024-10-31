@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Mikael.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Mikael.css">
+    <title>Quiz website</title>
 </head>
 <body>
 <header>
@@ -16,29 +16,29 @@
 </div>
 </header>
 <main>
+<form id="quiz" action="/Mikael2.html">
 <img src="tomHanks.avif" alt="Tom Hanks">
-<form action="/Mikael2.html">
     <div class="container1">
         <label>Who is this? *</label><br>
-        <label>Robert De Niro</label><br>
-        <input type="radio" id="actor1" name="actor" value="Robert de Niro"></input>
-        <label>Tom Hanks</label><br> 
-        <input type="radio" id="actor2" name="actor" value="Tom Hanks"></input>
-        <label>George Clooney</label><br> 
-        <input type="radio" id="actor3" name="actor" value="George Clooney"></input>
-        <label>Daniel Day Lewis</label><br>
-        <input type="radio" id="actor4" name="actor" value="Daniel Day Lewis"></input>
+        <label for="actor1">Robert De Niro</label><br>
+        <input type="radio" id="actor1" name="actor" value="Robert de Niro" required><br>
+        <label for="actor2">Tom Hanks</label><br> 
+        <input type="radio" id="actor2" name="actor" value="Tom Hanks" required><br>
+        <label for="actor3">George Clooney</label><br> 
+        <input type="radio" id="actor3" name="actor" value="George Clooney" required><br>
+        <label for="actor4">Daniel Day Lewis</label><br>
+        <input type="radio" id="actor4" name="actor" value="Daniel Day Lewis" required><br>
     </div>
     <div class="container2">
         <label>Which movie is he most known for?</label><br>
-        <label>Gladiator</label><br>
-        <input type="radio" id="movie1" name="movie" value="Gladiator"></input>
-        <label>Forrest Gump</label><br> 
-        <input type="radio" id="movie2" name="movie" value="Forrest Gump"></input>
-        <label>Schindlers List</label><br> 
-        <input type="radio" id="movie3" name="movie" value="Schindlers List"></input>
-        <label>The Shining</label><br>
-        <input type="radio" id="movie4" name="movie" value="The Shining"></input>
+        <label for="movie1">Gladiator</label><br>
+        <input type="radio" id="movie1" name="movie" value="Gladiator"><br>
+        <label for="movie2">Forrest Gump</label><br> 
+        <input type="radio" id="movie2" name="movie" value="Forrest Gump"><br>
+        <label for="movie3">Schindlers List</label><br> 
+        <input type="radio" id="movie3" name="movie" value="Schindlers List"><br>
+        <label for="movie4">The Shining</label><br>
+        <input type="radio" id="movie4" name="movie" value="The Shining"><br>
     </div>
     <div class="container3">
         <label>In Which famous animated movie does he play a Cowboy</label><br>
@@ -47,46 +47,44 @@
     <div class="container4">
         <label>Which other popular movies has He been a part of</label><br>
         <label>Cast Away</label><br>
-        <input type="checkbox" id="movieGuess1" name="movie" value="Cast Away"></input>
+        <input type="checkbox" id="movieGuess1" name="Cast Away" value="Cast Away"><br>
         <label>La La land</label><br>
-        <input type="checkbox" id="movieGuess2" name="movie" value="La La land"></input>
+        <input type="checkbox" id="movieGuess2" name="La La land" value="La La land"><br>
         <label>Catch me if you can</label><br> 
-        <input type="checkbox" id="movieGuess3" name="movie" value="Catch me if you can"></input>
+        <input type="checkbox" id="movieGuess3" name="Cmiyc" value="Catch me if you can"><br>
         <label>Saving private Ryan</label><br>
-        <input type="checkbox" id="movieGuess4" name="movie" value="Saving private Ryan"></input>
+        <input type="checkbox" id="movieGuess4" name="Saving private" value="Saving private Ryan"><br>
         <label>Star Wars</label><br>
-        <input type="checkbox" id="movieGuess5" name="movie" value="Star Wars"></input>
+        <input type="checkbox" id="movieGuess5" name="Star Wars" value="Star Wars"><br>
         <label>The Da-Vinci code</label><br>
-        <input type="checkbox" id="movieGuess6" name="movie" value="The Da-Vinci Code"></input>
+        <input type="checkbox" id="movieGuess6" name="Da-Vinci" value="The Da-Vinci Code"><br>
         <label>Shawshank redemption</label><br>
-        <input type="checkbox" id="movieGuess7" name="movie" value="Shawshank redemption"></input>
+        <input type="checkbox" id="movieGuess7" name="Shawshank" value="Shawshank redemption"><br>
     </div>
     <div class="container5">
-        <label>How many oscar's has this actor won? *</label>
-        <label>0</label><br>
-        <input type="radio" id="oscarNumber0" name="oscar's" value="0"></input>
-        <label>1</label><br>
-        <input type="radio" id="oscarNumber1" name="oscar's" value="1"></input>
-        <label>2</label><br>
-        <input type="radio" id="oscarNumber2" name="oscar's" value="2"></input>
-        <label>3</label><br>
-        <input type="radio" id="oscarNumber3" name="oscar's" value="3"></input>    
+        <label>How many Oscars has this actor won? *</label><br>
+        <label for="oscar1">0</label><br>
+        <input type="radio" id="oscarq1" name="oscar" value="0" required><br>
+        <label for="oscar2">1</label><br> 
+        <input type="radio" id="oscarq2" name="oscar" value="1" required><br>
+        <label for="oscar3">2</label><br> 
+        <input type="radio" id="oscarq3" name="oscar" value="2" required><br>
+        <label for="oscar4">3</label><br>
+        <input type="radio" id="oscarq4" name="oscar" value="3" required><br>
     </div>
-</form>
 </main>
 <footer>
     <div class="endSection">
         <label>Mail:</label>
-        <input type="text" id="email">
+        <input type="email" id="email"><br>
         <label>First name:</label>
-        <input type="text" id="firstName">
+        <input type="text" id="firstName"><br>
         <label>Last name:</label>
-        <input type="text" id="lastName">
-        <input type="submit" id="submit" name="submit" value="Submit"> 
+        <input type="text" id="lastName"><br>
+        <button type="submit">Submit</button>
     </div>
-    <p></p>
 </footer>
-<script src="Mikael.js"></script>
-
+</form>
 </body>
+<script src="Mikael.js"></script>
 </html>
