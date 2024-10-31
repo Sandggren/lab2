@@ -103,3 +103,8 @@ img {
     font-size: x-large;
     border-radius: 5%;
 }
+
+.success {
+    size: 400px;
+    color: green;
+}
