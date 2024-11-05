@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Mikael.css">
     <title>Quiz website</title>
@@ -16,9 +16,9 @@
 </div>
 </header>
 <main>
-<form id="quiz" action="/Mikael2.html">
+<form id="quiz">
 <img src="tomHanks.avif" alt="Tom Hanks">
-    <div class="container1">
+    <div id="questionOne" class="container1">
         <label>Who is this? *</label><br>
         <label for="actor1">Robert De Niro</label><br>
         <input type="radio" id="actor1" name="actor" value="Robert de Niro" required><br>
@@ -61,27 +61,28 @@
         <label>Shawshank redemption</label><br>
         <input type="checkbox" id="movieGuess7" name="Shawshank" value="Shawshank redemption"><br>
     </div>
-    <div class="container5">
+    <div id="questionFive" class="container5">
         <label>How many Oscars has this actor won? *</label><br>
         <label for="oscar1">0</label><br>
         <input type="radio" id="oscarq1" name="oscar" value="0" required><br>
         <label for="oscar2">1</label><br> 
         <input type="radio" id="oscarq2" name="oscar" value="1" required><br>
         <label for="oscar3">2</label><br> 
-        <input type="radio" id="oscarq3" name="oscar" value="2" required><br>
+        <input type="radio" id="oscarq3" name="oscar" value="2"required><br>
         <label for="oscar4">3</label><br>
         <input type="radio" id="oscarq4" name="oscar" value="3" required><br>
     </div>
 </main>
 <footer>
     <div class="endSection">
-        <label>Mail:</label>
+        <label>* Mail:</label>
         <input type="email" id="email"><br>
-        <label>First name:</label>
+        <label>* First name:</label>
         <input type="text" id="firstName"><br>
-        <label>Last name:</label>
+        <label>* Last name:</label>
         <input type="text" id="lastName"><br>
         <button type="submit">Submit</button>
+        <p id="error"></p>
     </div>
 </footer>
 </form>
